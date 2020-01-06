@@ -1,8 +1,11 @@
 package com.ludashen.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.sql.DataSource;
 
 /**
  * @description:
@@ -11,6 +14,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class HelloContrller {
+    @Autowired
+    private DataSource dataSource;
+
     @GetMapping("hello")
     @ResponseBody
     public String hello(){
