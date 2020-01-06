@@ -1,5 +1,31 @@
-jdbc:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/engkouyu
-  username: root
-  password: ludashen
+#配置数据库连接，配置这个的需要配置数据库连接池
+#jdbc:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/engkouyu
+#  username: root
+#  password: ludashen
+#配置端口
+server:
+  port: 8080
+#  servlet:
+##    配置只有do请求响应
+#    path: "*.do"
+##  配置日志
+logging:
+  level:
+    com.ludashen: debug
+#在添加这个之前需要添加数据库驱动
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/engkouyu
+    username: root
+    password: ludashen
+#springBoot里边已经集成了效率比较高的数据库连接池（日本的）
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+#  mapper-locations: mapper/*.xml
+#mybatis配置
+# 扫描别名包
+
