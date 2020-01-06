@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @description:
- * @author: 陆均琪
+ * @author: 陆大哥
  * @Data: 2020-01-06 0:23
  * 注意： 这个类不能放在第一层文件夹里边，不然可能启动失败
  */

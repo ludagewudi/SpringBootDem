@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @description: 配置MVC拦截器（类似SSM项目里边的配置）
- * @author: 陆均琪
+ * @author: 陆大哥
  * @Data: 2020-01-06 16:15
  */
 @Configuration
